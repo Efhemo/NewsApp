@@ -15,7 +15,7 @@ class NewsCel extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             new Container(
-              padding: EdgeInsets.symmetric(vertical: 4.0),
+              padding: EdgeInsets.all(4.0),
               child: new Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[

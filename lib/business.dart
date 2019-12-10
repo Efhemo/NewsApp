@@ -14,7 +14,8 @@ class BusinessStateFul extends StatefulWidget {
   }
 }
 
-class BusinessState extends State<BusinessStateFul> {
+class BusinessState extends State<BusinessStateFul>
+    with AutomaticKeepAliveClientMixin {
   var _isLoading = true;
 
   final url = Constant.base_url + Constant.business_category + Constant.key;
@@ -81,4 +82,7 @@ class BusinessState extends State<BusinessStateFul> {
       _isLoading = false;
     });
   }
+
+  @override
+  bool get wantKeepAlive => true;
 }
